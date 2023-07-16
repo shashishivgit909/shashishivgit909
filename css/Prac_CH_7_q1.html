@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header using grid</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+
+        }
+        ul li{
+            list-style:none; 
+            border:1px solid red;
+            margin:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li>Home </li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </header>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo doloremque quisquam voluptate repellat, eaque
+        corrupti ipsa velit expedita sint? Deleniti porro similique earum molestias, amet error? Dolorem aspernatur vel
+        delectus!</p>
+</body>
+
+</html>

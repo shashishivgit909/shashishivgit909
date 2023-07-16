@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        
+
+        
+    /* by this we initialize a flexbox  */
+    /* if we give height to flex conatiner than with in that height all items will be arranged (by wraping or not as needed)*/
+        .container {
+            display: flex;
+            flex-direction: column; 
+            flex-wrap: wrap;
+            /* by this remaining spce of flex container will be divided equally aroung items */
+            
+            /* justify-content: space-around;
+            align-items: center;
+
+           */
+            height: 900px;
+            width:1000px ;
+            
+           /* by below align items comes to centre of cross axis with only height needed by items (donot stretch up to full height) */
+/*             
+           justify-content: space-between;
+           align-items:center ; */
+           border: 2px solid black;
+
+        }
+        .box{
+            width: 300px;
+        }
+       
+        .box1{
+           
+            background-color: rgb(255, 162, 0);
+            border: 1px solid black;
+            /* align-self: flex-start; */
+             }
+        
+        .box2{
+            /* height: 25vw; */
+           
+            background-color: rgb(255, 162, 0);
+            border: 1px solid rgb(59, 124, 51);
+        }
+        .box3{
+            background: red;
+            border: 1px solid black;
+           
+        }
+    
+        
+    </style>
+</head>
+
+<!-- here container is a flex box and box1 and box2 are two elements of it which will be arranged in horizontal direction from left to right . -->
+<body>
+    <div class="container">
+        <div class="box box1">
+           <p> box1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima?</p>
+        </div>
+        <div class="box box2"><p>box2:Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit!</p></div>
+        <div class="box box3"><p>box3:Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit!</p></div>
+       
+        
+    </div>
+</body>
+
+
+</html>

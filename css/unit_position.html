@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 70px;
+
+        }
+
+        p {
+            text-align: center;
+        }
+     /* ht and width in container used here as VH and VH are relative unit ( see from harry notes) */
+        .container {
+            background-color: aqua;
+            height: 50vh; 
+            width: 50vh;
+        }
+        .box{
+            height: 3vh;
+            width: 50vw;
+            background-color: rgb(115, 255, 0);
+
+            /* below position is relative so we can move element using box as class using top , left , right , bottom;
+
+             but if postion is static(by default static) then we cannot shift element postion by left, right etc) */
+
+             position :relative;  
+             /* <this means box shift 40px from current top position . i.e it shifts towards botton by 40px> */
+            top: 40px; 
+            left: 300px;
+            /* this means box shift 30px from left.
+         */
+             }
+        
+        .box2{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+ <!-- Note: if we  move one div or element using position ,other element place  donot change which causes one elemnt may overlaps with other. -->
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil expedita vero alias incidunt.
+            Voluptates culpa explicabo ipsum libero facere doloribus temporibus tempora nihil mollitia at! Rerum laborum
+            voluptatibus obcaecati commodi ut cumque sit.
+
+        </p>
+    </div>
+    <div class="box">
+       i am abox 
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto harum animi est?
+    </div>
+</body>
+
+</html>

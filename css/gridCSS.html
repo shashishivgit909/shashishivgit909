@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            /* to initialize grid */
+            display: grid;
+
+            background-color: yellow;
+
+            /* used to provide gap between rows */
+            /* grid-row-gap:10px; */
+
+            /* used to provide gap between columns */
+            grid-column-gap: 5px;
+
+            /* used to specify no of columns and thier width (i.e 3 space seperated values auto auto 50px)
+            tells that there will be columns in which first two will have any random width and 3rd one  with is 50px */
+            grid-template-columns: auto auto 50px;
+
+            /* this is used to align whole grid elements horizontally(i.e center , left , right) */
+            /* justify-content:right; */
+            align-item:flex-start;
+
+            border :1px solid black;
+        }
+        .item{
+            background-color: red;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+</body>
+</html>
